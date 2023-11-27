@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HomePage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="fff.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<style>
+	.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+	
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: rgb(255, 236, 131);
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: rgb(104, 27, 69);
+     color: white;
+  }
+</style>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="#home">Home</a>
+    <a href="newschemes.html">New Schemes</a>
+    <a href="creator.html">Creators</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="complain.html">Complain</a>
+
+    <a href="contact.html" class="split">Contact us</a>
+  </div>
+  
+<div class="container">
+  <header>
+        
+        
+    
+  </header>
+  <br>
+      
+<center>
+ 
+  <div class="Logo-image">
+  <fieldset class="logo">
+      <img src="legis.jpeg" height="40">
+     
+     
+          <div class="moto">
+              <img src="ucl.png" height="4px">
+              <center><h3 class ="head">The Legislative Assembly Of Ward "APSIT"</h3></center>
+      </div>
+  </fieldset class="logo">
+  
+  </div>
+</div>
+
+</center>
+<br>
+<hr>
+<div class="onoffswitch3">
+    <input type="checkbox" name="onoffswitch3" class="onoffswitch3-checkbox" id="myonoffswitch3" checked>
+    <label class="onoffswitch3-label" for="myonoffswitch3">
+        <span class="onoffswitch3-inner">
+            <span class="onoffswitch3-active">
+                <marquee class="scroll-text">THANE: All Members of the Apsit Ward hereby are expected to get their voting card verified in the Corporator's office  <span class="glyphicon glyphicon-forward"></span> Due to ongoing construction of L.B.S road , the main highway will be closed til 25th of october : Corporator <span class="glyphicon glyphicon-forward"></span>  All Hereby are Informed that on Sunday , 20th october there will be water cut-off of 10% : By B.M.C</marquee>
+                <span class="onoffswitch3-switch">TODAY'S NEWS <span class="glyphicon glyphicon-remove"></span></span>
+            </span>
+            <span class="onoffswitch3-inactive"><span class="onoffswitch3-switch">SHOW BREAKING NEWS</span></span>
+        </span>
+    </label>
+</div>
+<br>
+
+
+
+<center><h2>Works Of Corporator of Ward Apsit</h2></center>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Completed Work </button>
+  <button class="btn" onclick="filterSelection('cars')"> Sports Section</button>
+  <button class="btn" onclick="filterSelection('people')"> Ongoing Work</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="Road 1.jpeg" alt="Mountains" style="width:100%">
+      <h4>P.R Kadam Marg</h4>
+      <p>P.R Kadam Marg Renovated by Doing Concrete Road</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="Hall.jpeg" alt="Lights" style="width:100%">
+      <h4>Urs Corpo Hall</h4>
+      <p>Multipurpose Hall for People of Ward</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="Park.jpeg" alt="Nature" style="width:100%">
+      <h4>Public Park</h4>
+      <p>Public Park Built by Corporator for Children for playing and relaxing for Adults</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="Sports.jpeg" alt="Car" style="width:100%">
+      <h4>Corporator's Cricket Trophy</h4>
+      <p>Cricket Tournament Arranged for Childrens and Adults</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="kabaddi.jpeg" alt="Car" style="width:100%">
+      <h4>Corporator's Kabaddi Trophy</h4>
+      <p>Kabaddi Tournament Arranged for Childrens and Adults</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="kho.jpeg" alt="Car" style="width:100%">
+      <h4>Corporator's Kho-Kho Trophy</h4>
+      <p>Kho-Kho Tournament Arranged for Childrens and Adults</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="RD.jpeg" alt="People" style="width:100%">
+      <h4>Apsit Road Repairing</h4>
+      <p>Repairing of Apsit Road for the smooth flow of traffic</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="rep.jpeg" alt="People" style="width:100%">
+      <h4>Ground Renovation</h4>
+      <p>Renovation of Public Ground Undertaken by Corporator</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="drain.jpeg" alt="People" style="width:100%">
+      <h4>Drainage Repairing</h4>
+      <p>Drainage repairing to avoid water logging</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+<br>
+
+
+<footer>
+  <div class="footer-contetnt"> 
+      <center><h3>Ur's Corporator</h3>
+      <p>The way towards Great Ward Leading The Country</p></center>
+      <!-- <ul class="socials">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+      </ul> -->
+  </div>
+  
+  <div class="footer-bottom">
+      <p>copyright &copy;2022 Ur's Corporator. designed by <span>KAS Developers</span></p>
+  </div>
+</footer> 
+
+</body>
+</html>

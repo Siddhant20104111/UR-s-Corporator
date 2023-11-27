@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration Form </title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/;ine.css">
+    
+
+</head>
+<body>
+    <div class = "container">
+        <header>Registration</header>
+        
+        <form action="connect.php" method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your Name" required >
+                        </div>
+
+                        <div class="input-field">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" placeholder="Enter Birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="emal" placeholder="Enter your email-id" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for>Mobile Number</label>
+                            <input type="number" name="mobno" placeholder="Enter your Mobile Number" required>
+                        </div>
+
+                        <!--<div class="radio-inline">
+                            <label>Gender</label><br>
+                            <input type="radio"  required>Male
+                            <input type="radio"  required>Female
+
+                        </div>-->
+                        <div class="radio-inline">
+                        <label>Gender</label><br>
+                        <select name="gen" required>
+                            
+                            <option value="" disabled selected>choose your gender</option>
+                            <option label="Male">Male</option>
+                            <option label="Female">Female</option>
+                            <option label="Other">Other</option>
+                    
+                        </select>
+                        </div>
+                        
+                        
+                        <!--<div class="radio-inline">
+                           <label>Choose Gender</label>
+            
+                            <input type="radio" name="Gen">Male
+                            <input type="radio" name="Gen">Female
+                           
+                        </div>-->
+
+                        <div class="input-field">
+                            <label>Password</label>
+                            <input type="password" name="pwd" placeholder="Enter your Password" required>
+                        </div>
+                        
+                        
+                            
+                            
+                            
+                        <!--<label class="radio-inline">
+                            <input type="radio" name="optradio" checked>Male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio">Female
+                        </label>-->
+                              
+                    </div>
+                </div>
+
+                <div class="details Address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Room No & Area</label>
+                            <input type="text" name="add" placeholder="Enter Room no and Area" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Street</label>
+                            <input type="text" name="stret" placeholder="Enter Street" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Pincode</label>
+                            <input type="number" name="pinco" placeholder="Enter pincode" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" name="stat" placeholder="Enter your State" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" name="dist" placeholder="Enter District" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ward Number</label>
+                            <input type="text" name="wardno" placeholder="Enter ward number" required>
+                        </div>
+
+                        <div class="buttons">
+                            <!--<button class="backBtn">
+                                <span class="btnText">Back</span>
+                                <i class="uil uil-navigator"></i>
+                            </button>-->
+                             
+    
+                            <button class="nextBtn" name="kalpesh" onclick="register()">
+                                <span class="btnText">Register</span>
+                                
+                                
+                            <button class="nextBtn" onclick="location.href='http://localhost/UrsCorporator/login.html'">login</button>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="script2.js"></script>
+        <div id="google_translate_element"></div>
+    
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+    
+</body>
+</html>

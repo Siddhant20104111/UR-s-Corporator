@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password Form</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Reset Password</header>
+
+                <form action="#" name = "reg">
+
+                    <div class="field input-field">
+                        <input type="email" name="emal" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field button-field">
+                        <button onclick=" register(),myFunction()" >Reset</button>
+                    </div>
+
+                    
+                </form>
+                    
+
+                
+            </div>
+
+            
+                
+            </div>
+        </div>
+    </section>
+    <script >
+        
+
+        function register(){
+            var emal=document.forms.reg.emal.value;
+            
+
+            var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?w+)*(\.\w{2,3})+$/g;
+            
+
+            if (emal=="" ){
+                window.alert("Please enter your Email Address");
+                document.reg.emal.focus();
+                return false;
+            }
+
+
+            if( !regEmail.test(emal)){
+                window.alert("Please Enter valid Email Address Example: siddhantdarekar1010@gmail.com ");
+                document.reg.emal.focus();
+                return false;
+            }
+        }
+
+        function myFunction() {
+          alert("Reset Password link has been sent to your email id");
+        }
+    </script>
+</body>
+</html>

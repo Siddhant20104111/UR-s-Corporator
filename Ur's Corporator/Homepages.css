@@ -1,0 +1,243 @@
+body{
+    background-color: bisque;
+    
+}
+.top-bar{
+    float : right;
+    
+    margin-top: 5px;
+    /* padding: 10%; */
+    margin-bottom: 40%;
+    height: 40%;
+    position: relative;
+    
+    
+}
+.top-bar li {
+    display: inline-block; 
+    
+}
+.top-bar li a:hover{
+    opacity: 0.5;
+
+
+}
+.top-bar li a{
+    color:bisque ;
+    padding: 0px 20px;
+    margin-top: 2px;
+}
+fieldset {
+    background-color: #581845;
+    height: 25px;
+    margin:auto;
+   
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-weight: bold;
+    color:#581845
+}
+img{
+    height:400px;
+    width:800px;
+    opacity: 0.3;
+}
+.Logo-image fieldset{
+    width: 800px;
+    height: 400px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: rgb(239, 210, 137);
+    position:relative;
+}
+.bottom-left{
+    position: absolute;
+    /* margin-top:120px; */
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+    font-family: "Times New Roman", Times, serif;
+    color:#581845;
+    border-color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-display: center;
+    
+
+}
+.moto img{
+    height: 200px;
+    width: 200px;
+    position: center;
+    border-radius: 50%;
+    transform: translate(150%, -200%);
+    margin-top:80px;
+    top: 50%;
+    margin-right: 75%;
+    size: 30px;     
+    opacity: 0.9;
+    border: black;
+}
+.menubar{
+    background-color: rgb(249, 255, 167);
+    height: 25px;
+    margin-top: 2px;
+}
+.menubar li{
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 3px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.menubar li a:hover{
+    opacity: 0.5;
+}
+.head{
+    position: absolute;
+    bottom :17px;
+    left:20px;
+    right:20px;
+    margin:right;
+}
+/* table{
+    size: 400px;
+    color: aqua;
+    background-color:lightcyan; */
+
+/* } */
+/* .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 29px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+                 */
+.bottom-left{
+    margin: 30%;
+                 }
+footer{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background:lightgoldenrodyellow;
+    height:auto;
+    width: 100vw;
+    font-family:"Open Sans";
+    padding-top: 40px;
+    color: black;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size:1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+    
+}
+.socials a{
+    text-decoration: none;
+    color: rgb(90, 92, 212);
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition:color .4s ease;
+
+}
+.socials a:hover i{
+    color:aqua;
+
+}
+.footer-bottom{
+    background: #581845;
+    width:100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size:14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: bisque;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #about {
+    top: 20px;
+    background-color: #04AA6D;
+  }
+  
+  #committees {
+    top: 80px;
+    width: 200px;
+    background-color: #2196F3;
+  }
+  
+  #ns {
+    top: 140px;
+    width: 200px;
+    background-color: #f44336;
+  }
+  
+  #creators {
+    top: 200px;
+    background-color: #555
+  } 
+
+

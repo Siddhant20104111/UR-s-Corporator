@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>login</header>
+
+                <form action="authentication.php" name = "post">
+
+                    <div class="field input-field">
+                        <label>Email id</label>
+                        <input type="email" name = "email" placeholder="Email" id="email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <label> Password</label>
+                        <input type="password" name = "password" placeholder="password"  id="password" class="input" >
+                        <i class="bx bx-hide eye-icon"></i>
+                        <!--<input type ="checkbox" onclick="myFunction()">-->
+                        
+                    </div>
+
+                    <div class="form-link">
+                        <a href="/forgetpass.html" class="forget-pass"> Forgot Password</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button name="siddhant" onclick="register()" >Login</button>
+                    </div>
+                </form>
+                    <div class="form-link">
+                        <span>Don't have an account?<a href="http://localhost/HTML%20project/registration.html" class="link signup-link">Register</a></span>
+                    </div>
+
+                
+            </div>
+
+            
+                
+            </div>
+        </div>
+        
+    </section>
+    <script src="script3.js"></script>
+    <div id="google_translate_element"></div>
+    
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
